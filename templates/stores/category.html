@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}Category{% endblock %}
+
+{% block content %}
+
+<main>
+
+  <section class="py-5 text-center container mt-5">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Search by Category</h1>
+
+        <form class="d-flex" action="/category">
+          <select class="form-select" aria-label="Default select example" name="selected_category">
+              <option selected>Select from category</option>
+              <option value="electronics">Electronics</option>
+              <option value="jewelery">Jewelery</option>
+              <option value="men's clothing">Men's Clothing</option>
+              <option value="women's clothing">Women's Clothing</option>
+          </select>
+          <span class="input-group-btn mx-2">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+
+
+{% endblock %}
